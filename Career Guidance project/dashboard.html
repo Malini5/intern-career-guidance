@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Career Guidance Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword } from  "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
+        import {  getFirestore } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js";
+    </script>
+    <header>
+        <h1>Dashboard</h1>
+        <nav>
+            <a href="aptitude-test.html">Take Aptitude Test</a>
+            <a href="#" id="logout-btn">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Available Colleges</h2>
+        <ul id="college-list"></ul>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

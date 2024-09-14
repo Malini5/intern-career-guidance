@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword } from  "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
+        import {  getFirestore } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js";
+    </script>
+    <header>
+        <h1>Welcome to Career Guidance</h1>
+        <nav>
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Login</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="aptitude-test.html">Aptitude Test</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Find Your Ideal College</h2>
+        <p>Use our platform to find the best colleges based on your interests and exam results.</p>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

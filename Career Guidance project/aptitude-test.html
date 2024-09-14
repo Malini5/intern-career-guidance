@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptitude Test - Career Guidance Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword } from  "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
+        import {  getFirestore } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js";
+    </script>
+    <header>
+        <h1>Aptitude Test</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="#" id="logout-btn">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <form id="aptitude-test-form">
+            <h2>Verbal Section</h2>
+            <label>Q1: Choose the correct synonym for 'happy'.</label>
+            <select id="q1">
+                <option value="wrong">Sad</option>
+                <option value="correct">Joyful</option>
+                <option value="wrong">Angry</option>
+            </select>
+            <h2>Quantitative Section</h2>
+            <label>Q2: What is 10 + 5?</label>
+            <select id="q2">
+                <option value="wrong">12</option>
+                <option value="correct">15</option>
+                <option value="wrong">20</option>
+            </select>
+            <h2>General Knowledge Section</h2>
+            <label>Q3: Capital of India?</label>
+            <select id="q3">
+                <option value="wrong">Mumbai</option>
+                <option value="correct">New Delhi</option>
+                <option value="wrong">Kolkata</option>
+            </select>
+            <button type="submit">Submit Test</button>
+        </form>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
